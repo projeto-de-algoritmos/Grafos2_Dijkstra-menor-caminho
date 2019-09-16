@@ -17,7 +17,7 @@ Para colocar em prática os algoritmos aprendidos na disciplina, foi criado um p
 
 No jogo o rato é colocado em uma divisão A com coordenada (n,m) em uma gaiola e deve chegar o mais rápido possível a linha de chegada B. O rato pode se movimentar apenas pelas portas laterais das divisões sendo que algumas dessas divisões tem portas trancadas. A gaiola tem dimensão de 5x5 e tem as seguintes portas disponíveis:
 
-~imagem da gaiola
+(gaiola)[https://github.com/projeto-de-algoritmos/Lista2_MikhaelleBueno_GuilhermeDeusdara/blob/master/Caixa.PNG]
 
 ## Input:
 
