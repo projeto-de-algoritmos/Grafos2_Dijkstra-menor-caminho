@@ -44,9 +44,12 @@ void dijkstra(int s, int N){
 
 int main()
 {
-vector<edge> edges { edge(3, 8, 1), edge(5, 10, 1),
-edge(7, 8, 1), edge(8, 9, 1), edge(9, 14, 1), edge(14, 19, 1),
-edge(19, 24, 1), edge(24, 23, 1), edge(24,25,1) };
+vector<edge> edges { edge(1,2,1), edge(1,6,1), edge(2,7,1),edge(2,3,1), edge(3, 8, 1), edge(3,4,1), edge(4,5,1), 
+edge(4,9,1), edge(5, 10, 1), edge(6,7,1), edge(7,12,1), edge(7, 8, 1), edge(8, 9, 1), edge(8,13,1), edge(9, 10, 1), 
+edge(9, 14, 1), edge(10,15,1), edge(11,12,1), edge(11,16,1),edge(12,13,1),edge(12,17,1),edge(13,14,1),edge(13,18,1),
+edge(14, 19, 1), edge(14,15,1), edge(15,20,1), edge(16,17,1),edge(16,21,1), edge(17,18,1), edge(17,22,1), edge(18,19,1),
+edge(18,23,1), edge(19,20,1), edge(19, 24, 1), edge(20,25,1), edge(21,22,1),edge(22,23,1),edge(23, 24, 1), edge(24,25,1) };
+
 
 for (const auto& [u, v, w] : edges)
 {
@@ -54,9 +57,9 @@ adj[u].push_back(ii(v, w));
 adj[v].push_back(ii(u, w));
 }
 
-dijkstra(1, 6);
+dijkstra(1, 25);
 
-for (int u = 1; u <= 6; ++u)
+for (int u = 1; u <= 25; ++u)
 {
 cout << "dist(1," << u << ") = " << dist[u] << endl;
 
