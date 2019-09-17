@@ -35,6 +35,6 @@ A solução pode ser dada por um grafo em que cada divisão é um nó e cada por
 
 Faça o download ou clone o repositório e execute na pasta que contem o arquivo cpp
 
-          g++ PA-grafos2.cpp -std=c++17 -o prog
-          ./prog
+          $g++ PA-grafos2.cpp -std=c++17 -o prog
+          $./prog
   
