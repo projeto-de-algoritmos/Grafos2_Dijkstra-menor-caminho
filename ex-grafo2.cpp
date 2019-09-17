@@ -57,14 +57,20 @@ adj[u].push_back(ii(v, w));
 adj[v].push_back(ii(u, w));
 }
 
-dijkstra(1, 25);
+int inicial, final;
 
-for (int u = 1; u <= 25; ++u)
-{
-cout << "dist(1," << u << ") = " << dist[u] << endl;
+cout << "Entre com o numero do ponto inicial: \n"; 
+cin >> inicial ;
+cout << "Entre com o numero do ponto final: \n"; 
+cin >> final;
+
+dijkstra(inicial, final);
+
+
+cout << "dist("<<inicial<<"," << final << ") = " << dist[final] << endl;
 
 vector<int> path;
-auto p = u;
+auto p = final;
 
 while (p != 1) {
 path.push_back(p);
@@ -74,7 +80,7 @@ p = pred[p];
 path.push_back(1);
 reverse(path.begin(), path.end());
 
-for (size_t i = 0; i < path.size(); ++i)
+for (size_t i = 0; i < path.size(); ++i){
 cout << path[i] << (i + 1 == path.size() ? "\n" : " -> ");
 }
 
